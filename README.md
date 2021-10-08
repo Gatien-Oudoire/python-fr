@@ -1,8 +1,9 @@
 # PYTHON - FR
 
+Ceci est une tentative de traduction des classes de base Python, de certaines conditions et certaines fonctions
+
 ## Les classes
 
-Ceci est une tentative de traduction des classes de base Python ainsi que de certaines conditions
 
 ### Classe Entier
 
