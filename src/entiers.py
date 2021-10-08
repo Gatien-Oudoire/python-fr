@@ -1,0 +1,2 @@
+class ent:
+    pass

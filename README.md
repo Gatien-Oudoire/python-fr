@@ -1,29 +1,45 @@
 # PYTHON - FR
 
+## Les classes
+
 Ceci est une tentative de traduction des classes de base Python ainsi que de certaines conditions
 
-## Classe Entier
+### Classe Entier
 
 Initialiseur -> Peut convertir un booleen, un decimal ou une chaine de caractere en entier
              -> Si impossible retourne une erreur
 
 Mise en place des operateurs qui retourne un entier sauf la division qui retournera un decimal
 
-## Classe Decimal
+### Classe Decimal
 
 Initialiseur -> Peut convertir un decimal ou une chaine de caractere en entier
 
 Mise en place des operateurs qui retourne un decimal
 
-## Classe Chaine
+### Classe Chaine
 
 Initialiseur -> Peut convertir un decimal ou une chaine de caractere en entier
 
 Mise en place de la concatenation
 
-### Afficher
+## Les fonctions
+
+### Imprimer
 
 Permet d afficher des listes, des entiers et des decimaux dans la console
+Prend un nombre illimite d'aguments
+
+### Pour
+
+Prend un parametre obligatoire la valeur maximale, prend un debut optionnel, ainsi qu un pas optionel
+l argument peut etre un entier dans ce cas la boucle ira du debut jusqu a ce chiffre
+si c est une liste ou une chaine de caractere elle passera chacun des elements de la liste en revue
+
+## Si
+
+Prend deux parametre un boolen et une fonction qui sera executee si le booleen est vrai
+Un troisieme argument de la fonction peut etre ajoute si le booleen s avere etre faux
 
 
 ## Bonus Traduction des Erreurs
