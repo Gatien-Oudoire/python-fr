@@ -8,7 +8,7 @@ class chaine:
 
     def __init__(self, o=""):
         res = []
-        if type(o) == int:
+        if isinstance(o, int):
             i = 10
             while o > i:
                 res.append(o%i)
@@ -19,9 +19,8 @@ class chaine:
                 self.contenu += self.nombresStr[n]
                 self.taille += 1
         
-        elif type(o) == str:
+        elif isinstance(o, str):
             self.contenu = o
-            print("o:", o)
             for _ in self.contenu:
                 self.taille += 1
 
@@ -32,18 +31,9 @@ class chaine:
             res += c
         for c in o.contenu:
             res += c
-        print(res)
         return chaine(res)
 
-    def __iadd__(self, o : object):
-        res = ""
-        for c in self.contenu:
-            res += c
-        for c in o.contenu:
-            res += c
-        print(self.contenu)
-        return chaine(res)
 
     def __str__(self) -> str:
         return self.contenu          
-            
+        
