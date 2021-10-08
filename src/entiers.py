@@ -1,4 +1,4 @@
-from erreurs import ErreurDeConversion
+from erreurs import ErreurDeConversion, TypeInconnu
 
 class entier:
     
@@ -15,15 +15,21 @@ class entier:
         elif isinstance(o, str):
             for c in o:
                 if not (c in self.chiffres):
-                    raise ErreurDeConversion(f"Il faut uniquement des chiffres dans la chaine:  {o}")
+                    raise ErreurDeConversion(f"Il faut uniquement des chiffres dans la chaine: {o}")
             l = []
-            for chiffre in o.__reversed__():
+            for chiffre in o[::-1]:
                 self.contenu += self.dictioChiffres[chiffre]
         
         elif isinstance(o, float):
-            o = str(o).split(".")[0]
-            for chiffre in o.__reversed__():
+            a = str(o)
+            o = a.split(".")[0]
+            for chiffre in o[::-1]:
                 self.contenu += self.dictioChiffres[chiffre]
+            if int(a.split(".")[1][0]) >= 5:
+                self.contenu += 1
+        
+        else:
+            raise TypeInconnu("La variable entrée n'est pas convertible en entier")
 
     def __eq__(self, o: object) -> bool:
         return self.contenu == o.contenu

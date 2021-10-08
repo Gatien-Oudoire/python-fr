@@ -1,3 +1,6 @@
+from entiers import entier
+
+
 class chaine:
     """
     Pour les chaines de caracteres
@@ -23,6 +26,18 @@ class chaine:
             self.contenu = o
             for _ in self.contenu:
                 self.taille += 1
+
+        elif isinstance(o, entier):
+            i = 10
+            while o.contenu > i:
+                res.append(o.contenu%i)
+                i *= 10
+            res.append(o.contenu%i)
+            res.reverse()
+            for n in res:
+                self.contenu += self.nombresStr[n]
+                self.taille += 1
+
 
 
     def __add__(self, o : object):
