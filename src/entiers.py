@@ -1,3 +1,5 @@
+from erreurs import ErreurDeConversion
+
 class entier:
     
     contenu : int = 0
@@ -12,15 +14,14 @@ class entier:
 
         elif isinstance(o, str):
             for c in o:
-                if c not in self.chiffres:
-                    raise ValueError
+                if not (c in self.chiffres):
+                    raise ErreurDeConversion(f"Il faut uniquement des chiffres dans la chaine:  {o}")
             l = []
             for chiffre in o.__reversed__():
                 self.contenu += self.dictioChiffres[chiffre]
         
         elif isinstance(o, float):
-            o = str(o)
-            o = o.split(".")[0]
+            o = str(o).split(".")[0]
             for chiffre in o.__reversed__():
                 self.contenu += self.dictioChiffres[chiffre]
 

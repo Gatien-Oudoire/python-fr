@@ -1,6 +1,7 @@
 from chaines import chaine
 from decimaux import decimal
 from entiers import entier
+from erreurs import *
 
 def afficher(*args) -> None:
     res : chaine = chaine()
