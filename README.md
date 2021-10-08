@@ -37,7 +37,7 @@ Prend un parametre obligatoire la valeur maximale, prend un debut optionnel, ain
 l argument peut etre un entier dans ce cas la boucle ira du debut jusqu a ce chiffre
 si c est une liste ou une chaine de caractere elle passera chacun des elements de la liste en revue
 
-## Si
+### Si
 
 Prend deux parametre un boolen et une fonction qui sera executee si le booleen est vrai
 Un troisieme argument de la fonction peut etre ajoute si le booleen s avere etre faux
