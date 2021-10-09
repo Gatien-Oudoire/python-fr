@@ -41,7 +41,24 @@ class entier:
         return self.contenu == o
 
     def __gt__(self, o: object) -> bool:
-        return self.contenu > o.contenu
+        if isinstance(o, entier):
+            return self.contenu > o.contenu
+        return self.contenu > o
+
+    def __gt__(self, o: object) -> bool:
+        if isinstance(o, entier):
+            return self.contenu >= o.contenu
+        return self.contenu >= o
 
     def __lt__(self, o: object) -> bool:
-        return self.contenu < o.contenu
+        if isinstance(o, entier):
+            return self.contenu < o.contenu
+        return self.contenu < o
+
+    def __le__(self, o: object):
+        if isinstance(o, entier):
+            return self.contenu <= o.contenu
+        return self.contenu <= o
+
+    def __truth__(self):
+        return bool(self.contenu)

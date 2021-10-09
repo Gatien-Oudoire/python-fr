@@ -6,6 +6,9 @@ Voici la documentation du module
 
 ### Entier
 
+Les entiers peuvent utiliser les operateur suivant : + * - /
+Il peuvent être comparés avec : < <= == > >=
+
 Initialiseur:
 ```py
 entier(valeur : int | str | float | entier | chaine | decimal)
@@ -22,8 +25,6 @@ dictioChiffres : dict[str, int]
 
 ### Dans
 
-Prototype:
-
 ```py
 dans(a : Any, L : List | Tuple | chaine | str)
 ```
@@ -31,7 +32,7 @@ dans(a : Any, L : List | Tuple | chaine | str)
 
 ### Imprimer
 
-Permet d afficher des listes, des entiers et des decimaux dans la console
+Permet d afficher des listes, des entiers, des chaines de caracteres et des decimaux dans la console
 
 ```py
 imprimer(*args : Any)

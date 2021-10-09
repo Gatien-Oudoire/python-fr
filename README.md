@@ -16,12 +16,6 @@ Ceci est une tentative de traduction des classes de base Python, de certaines co
 
 ## Les classes
 
-### Classe Entier
-
-Initialiseur -> Peut convertir un booleen, un decimal ou une chaine de caractere en entier
--> Si impossible retourne une erreur
-
-Mise en place des operateurs qui retourne un entier sauf la division qui retournera un decimal
 
 ### Classe Decimal
 
@@ -40,13 +34,13 @@ Mise en place de la concatenation
 Pour l'installer:
 
 ```bash
-pip install frpython
+$pip install frpython
 ```
 
 Pour installer la version de test:
 
 ```bash
-pip install -i https://test.pypi.org/simple/ frpython
+$pip install -i https://test.pypi.org/simple/ frpython
 ```
 
 Pour l'utiliser dans un script:
