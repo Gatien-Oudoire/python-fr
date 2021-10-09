@@ -2,22 +2,20 @@
 
 Ceci est une tentative de traduction des classes de base Python, de certaines conditions et certaines fonctions
 
-|Version|Utilisable|
-|-------|----------|
-|  1.0  |    Non   |
-|  1.1  |    Non   |
-|  1.2  |    Non   |
-| 1.2.4 |    Oui   |
-| 1.2.5 |    Oui   |
-
+| Version | Utilisable |
+| ------- | ---------- |
+| 1.0     | Non        |
+| 1.1     | Non        |
+| 1.2     | Non        |
+| 1.2.4   | Oui        |
+| 1.2.5   | Oui        |
 
 ## Les classes
-
 
 ### Classe Entier
 
 Initialiseur -> Peut convertir un booleen, un decimal ou une chaine de caractere en entier
-             -> Si impossible retourne une erreur
+-> Si impossible retourne une erreur
 
 Mise en place des operateurs qui retourne un entier sauf la division qui retournera un decimal
 
@@ -64,6 +62,16 @@ Pour l'installer:
 ```
 $ pip install -i https://test.pypi.org/simple/ frpython
 ```
+
+Pour l'utiliser dans un script:
+
+```py
+from frpython import *
+```
+
+## Documentation
+
+La Documentation est disponible dans le fichier du meme nom
 
 ## Bonus Traduction des Erreurs
 
