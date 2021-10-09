@@ -24,7 +24,7 @@ jobs:
           --wheel
           --outdir dist/
 
-      - name: Publie le paquet 📦 vers Test PyPi et PyPi
+      - name: Publie le paquet 📦 vers Test PyPi
         uses: pypa/gh-action-pypi-publish@master
         with:
           password: ${{ secrets.TEST_PY_API_TOKEN }}
