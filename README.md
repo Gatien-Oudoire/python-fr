@@ -54,6 +54,14 @@ Un troisieme argument de la fonction peut etre ajoute si le booleen s avere etre
 
 Prendra au maximum 3 parametres et au minimum 1 elle génerera un tuple
 
+## Installation
+
+Actuellement le paquet est uniquement disponible sur test.pypi
+Pour l'installer:
+
+```
+$ pip install -i https://test.pypi.org/simple/ frpython
+```
 
 ## Bonus Traduction des Erreurs
 
