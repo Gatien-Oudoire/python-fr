@@ -9,6 +9,7 @@ Ceci est une tentative de traduction des classes de base Python, de certaines co
 | 1.2     | Non        |
 | 1.2.4   | Oui        |
 | 1.2.5   | Oui        |
+| 1.2.6   | En Test    |
 
 ## Les classes
 

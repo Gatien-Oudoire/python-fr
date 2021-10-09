@@ -1,5 +1,5 @@
 from .erreurs import ErreurDeConversion, TypeInconnu
-
+from .chaines import chaine
 
 class entier:
 
@@ -14,7 +14,7 @@ class entier:
         if isinstance(o, int):
             self.contenu = o
 
-        elif isinstance(o, str):
+        elif isinstance(o, (str, chaine)):
             for c in o:
                 if not (c in self.chiffres):
                     raise ErreurDeConversion(

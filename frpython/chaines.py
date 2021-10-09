@@ -48,3 +48,10 @@ class chaine:
 
     def __str__(self) -> str:
         return self.contenu
+
+    def __iter__(self):
+        res = []
+        for i in self.contenu:
+            res.append(i)
+        return iter(res)
+

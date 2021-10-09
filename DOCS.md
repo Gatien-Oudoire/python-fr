@@ -8,7 +8,7 @@ Voici la documentation du module
 
 Initialiseur:
 ```py
-entier(valeur : int | str | float)
+entier(valeur : int | str | float | entier | chaine | decimal)
 ```
 
 Attributs:
