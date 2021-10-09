@@ -20,3 +20,11 @@ dictioChiffres : dict[str, int]
 
 ## Fonctions 
 
+### Dans
+
+Prototype:
+
+```py
+dans(a : Any, L : List | Tuple | chaine | str)
+```
+
