@@ -1,8 +1,13 @@
-from typing import List, Tuple
-from chaines import chaine
-from decimaux import decimal
-from entiers import entier
+import sys
+import os
+sys.path.append(os.chdir)
+
 from erreurs import *
+from entiers import entier
+from decimaux import decimal
+from chaines import chaine
+from typing import List, Tuple
+
 
 
 def imprimer(*args) -> None:
