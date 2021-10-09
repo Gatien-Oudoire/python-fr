@@ -50,8 +50,9 @@ class chaine:
         return self.contenu
 
     def __iter__(self):
+        i = 0
         res = []
-        for i in self.contenu:
-            res.append(i)
+        while i < self.taille:
+            res.append(self.contenu[i])
         return iter(res)
 

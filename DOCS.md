@@ -1,36 +1,72 @@
-# Documentation 
+# Classes
 
-Voici la documentation du module
+## Entier
 
-## Classes
+Les entiers peuvent utiliser les opérateurs suivants : + * - /
+Ils peuvent être comparés avec : < <= == > >=
 
-### Entier
-
-Les entiers peuvent utiliser les operateur suivant : + * - /
-Il peuvent être comparés avec : < <= == > >=
-
-Initialiseur:
+### Initialiseur:
 ```py
 entier(valeur : int | str | float | entier | chaine | decimal)
 ```
 
-Attributs:
+### Attributs:
 ```py
 contenu : int
 chiffres : tuple[int]
 dictioChiffres : dict[str, int]
 ```
 
-## Fonctions 
+## Décimal
 
-### Dans
+Les décimaux peuvent utiliser les opérateurs suivants: +
+
+Ils peuvent êtres comparés avec : ==
+
+### Initialiseur:
+
+```py
+decimal(o : int | str | chaine | entier | float | decimal)
+```
+
+### Attributs:
+
+```py
+contenu : float
+```
+
+## Chaines
+
+Les chaines peuvent utiliser les opérateurs suivants: +
+
+### Initialiseur:
+
+```py
+chaine(o : int | str | float | bool | entier | chaine | decimal | booleen)
+```
+
+### Attributs:
+
+```py
+contenu : str
+taille : int
+nombres : list[int]
+```
+
+### Autres
+
+Les chaines sont itérables
+
+# Fonctions 
+
+## Dans
 
 ```py
 dans(a : Any, L : List | Tuple | chaine | str)
 ```
 
 
-### Imprimer
+## Imprimer
 
 Permet d afficher des listes, des entiers, des chaines de caracteres et des decimaux dans la console
 
@@ -38,7 +74,7 @@ Permet d afficher des listes, des entiers, des chaines de caracteres et des deci
 imprimer(*args : Any)
 ```
 
-### Si
+## Si
 
 Prend deux parametre un boolen et une fonction qui sera executee si le booleen est vrai
 Si une fonction B est specifiee elle est executée si la condition est fausse
@@ -47,7 +83,7 @@ Si une fonction B est specifiee elle est executée si la condition est fausse
 si(condition: bool, A : function, B : function = None, Aargs: list = [], Baargs: list = []):
 ```
 
-### Distance
+## Distance
 
 Permet de generer un tuple pour l iterer
 debut sera la valeur a l indice 0 du tuple
@@ -57,7 +93,7 @@ pas sera l ecart entre chaque valeur
 distance(debut : int = 0, fin : int, pas : int = 1)
 ```
 
-### Pour
+## Pour
 
 Permet d iterer chaque valeut du type
 la fonction a chaque passage sera executee avec comme parametre la valeur de l iterable

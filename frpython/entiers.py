@@ -1,5 +1,7 @@
 from .erreurs import ErreurDeConversion, TypeInconnu
 from .chaines import chaine
+from .decimaux import decimal
+from .booleen import booleen
 
 class entier:
 
@@ -9,7 +11,7 @@ class entier:
     dictioChiffres = {"0": 0, "1": 1, "2": 2, "3": 3,
                       "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9}
 
-    def __init__(self, o) -> None:
+    def __init__(self, o : object) -> None:
 
         if isinstance(o, int):
             self.contenu = o
@@ -23,13 +25,22 @@ class entier:
             for chiffre in o[::-1]:
                 self.contenu += self.dictioChiffres[chiffre]
 
-        elif isinstance(o, float):
-            a = str(o)
+        elif isinstance(o, (float, decimal)):
+            if type(o) == float:
+                a = str(o.contenu)
+            else:
+                a = str(o)
             o = a.split(".")[0]
             for chiffre in o[::-1]:
                 self.contenu += self.dictioChiffres[chiffre]
             if int(a.split(".")[1][0]) >= 5:
                 self.contenu += 1
+
+        elif isinstance(o, (bool, booleen)):
+            if o:
+                self.contenu = 1
+            else:
+                self.contenu = 0
 
         else:
             raise TypeInconnu(
