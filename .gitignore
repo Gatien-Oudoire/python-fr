@@ -1,3 +1,5 @@
 test.py
 .vscode
 __pycache__
+build
+frpython.egg*
