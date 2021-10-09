@@ -5,7 +5,7 @@ on: push
 jobs:
   build-n-publish:
     name: Publier le paquet python 🐍📦 sur TestPyPi et PyPi
-    runs-on: windows-latest
+    runs-on: [linux, windows-latest]
 
     steps:
       - uses: actions/checkout@main
