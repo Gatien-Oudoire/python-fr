@@ -18,7 +18,7 @@ Ceci est une tentative de traduction des classes de base Python, de certaines co
 
 ## Documentation
 
-La Documentation est disponible dans le fichier [DOCS.md](/blob/main/DOCS.md)
+La Documentation est disponible dans le fichier [DOCS.md](/DOCS.md)
 
 Elle regroupe l'ensemble des classes et des fonctions
 
