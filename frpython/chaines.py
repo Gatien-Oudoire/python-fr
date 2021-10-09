@@ -1,4 +1,4 @@
-from entiers import entier
+from .entiers import entier
 
 
 class chaine:

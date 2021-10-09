@@ -1,4 +1,4 @@
-from erreurs import ErreurDeConversion, TypeInconnu
+from .erreurs import ErreurDeConversion, TypeInconnu
 
 
 class entier:
