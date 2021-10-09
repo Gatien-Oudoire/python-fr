@@ -1,10 +1,10 @@
-name: 🐍 pour envoyer le paquet sur pip
+name: Envoyer le paquet sur pip 🐍
 
 on: push
 
 jobs:
   build-n-publish:
-    name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
+    name: Publier le paquet python 🐍📦 sur TestPyPi et PyPi
     runs-on: windows-latest
 
     steps:
@@ -20,7 +20,7 @@ jobs:
           build
           --user
 
-      - name: Build a binary wheel and a source tarball
+      - name: Genere le paquet
         run: >-
           python -m
           build
