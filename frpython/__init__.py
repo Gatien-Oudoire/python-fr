@@ -5,7 +5,8 @@ from entiers import entier
 from erreurs import *
 
 
-def afficher(*args) -> None:
+def imprimer(*args) -> None:
+    """Traduction de la fonction print"""
     res = chaine()
     for a in args:
         if isinstance(a, chaine):
@@ -13,9 +14,6 @@ def afficher(*args) -> None:
         else:
             res += chaine(a)
     print(res)
-
-
-imprimer = afficher
 
 
 def si(condition: bool, A, B=None, Aargs: list = [], Baargs: list = []):
