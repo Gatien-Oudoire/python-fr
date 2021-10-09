@@ -4,9 +4,10 @@ Ceci est une tentative de traduction des classes de base Python, de certaines co
 
 |Version|Utilisable|
 |-------|----------|
-|  1.0  |   Non    |
-|  1.1  |   Non    |
-|  1.2  |  En Test |
+|  1.0  |    Non   |
+|  1.1  |    Non   |
+|  1.2  |    Non   |
+| 1.2.1 |  En Test |
 
 
 ## Les classes
