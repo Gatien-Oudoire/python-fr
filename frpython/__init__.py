@@ -1,11 +1,7 @@
-import sys
-import os
-sys.path.append(os.chdir)
-
-from erreurs import *
-from entiers import entier
-from decimaux import decimal
-from chaines import chaine
+from .erreurs import *
+from .entiers import entier
+from .decimaux import decimal
+from .chaines import chaine
 from typing import List, Tuple
 
 
