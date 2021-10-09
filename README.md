@@ -42,6 +42,10 @@ si c est une liste ou une chaine de caractere elle passera chacun des elements d
 Prend deux parametre un boolen et une fonction qui sera executee si le booleen est vrai
 Un troisieme argument de la fonction peut etre ajoute si le booleen s avere etre faux
 
+### Distance
+
+Prendra au maximum 3 parametres et au minimum 1 elle génerera un tuple
+
 
 ## Bonus Traduction des Erreurs
 
