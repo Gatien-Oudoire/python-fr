@@ -1,11 +1,11 @@
-from typing import Any, list, tuple
+from typing import Any, List, Tuple
 
 from .erreurs import ErreurArguments, TypeInconnu
 from .chaines import chaine
 from .entiers import entier
 
 
-def si(condition: bool, A, B=None, Aargs: list = [], Baargs: list = []):
+def si(condition: bool, A, B=None, Aargs: List = [], Baargs: List = []):
     """
     Les fonctions entree dans cette fonction doivent avoir un argument qui est une liste si rien n est mis la liste sera vide
     Retourne le resultat de la fonction
@@ -16,7 +16,7 @@ def si(condition: bool, A, B=None, Aargs: list = [], Baargs: list = []):
         return B(Baargs)
 
 
-def dans(a: bool, L: list) -> bool:
+def dans(a: bool, L: List) -> bool:
     for i in L:
         if i == a:
             return True
@@ -65,7 +65,7 @@ def pour(fonction, *args):
             i += 1
 
 
-def distance(*args) -> tuple:
+def distance(*args) -> Tuple:
     """Remplacement de la fonction range"""
     res = []
     if len(args) > 3:
@@ -95,12 +95,12 @@ def distance(*args) -> tuple:
     return tuple(res)
 
 
-def tant_que(condition: bool, f, args: list = []):
+def tant_que(condition: bool, f, args: List = []):
     while condition:
         f(args)
 
 
-def essayer(f, g, argsF: list = [], argsG: list = [], argsH: list = [],  h=None) -> Any:
+def essayer(f, g, argsF: List = [], argsG: List = [], argsH: List = [],  h=None) -> Any:
     """ Essaye la fonction f si erreur execute g sinon execute h retourne le resultat de g ou h"""
     try:
         f(argsF)

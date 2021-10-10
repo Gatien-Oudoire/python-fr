@@ -13,7 +13,7 @@ Ceci est une tentative de traduction des classes de base Python, de certaines co
 | 1.2.7   | *Stable    | PyPi       |
 | 1.3     | Mort       | Decimal    |
 | 1.4     | *Stable    | Booleen    |
-| 1.4.1   | En Test    | Fonctions  |
+| 1.4.2   | En Test    | Fonctions  |
 
 *stable mais pas trop
 

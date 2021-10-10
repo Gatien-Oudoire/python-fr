@@ -1,5 +1,3 @@
-from typing import List, Tuple
-
 from .erreurs import *
 from .decimaux import decimal
 from .booleen import booleen

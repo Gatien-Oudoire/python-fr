@@ -1,5 +1,3 @@
-from typing import Any
-
 from frpython.erreurs import TypeInconnu
 
 
@@ -7,7 +5,7 @@ class decimal:
 
     contenu: float
 
-    def __init__(self, o: Any) -> None:
+    def __init__(self, o: object) -> None:
         if isinstance(o, (float, decimal)):
             if type(o) == float:
                 a = o
