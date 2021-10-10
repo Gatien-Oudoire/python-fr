@@ -1,8 +1,8 @@
-from typing import List, Tuple
+from typing import Any, list, tuple
 
 from .erreurs import ErreurArguments, TypeInconnu
 from .chaines import chaine
-from .entiers import entier 
+from .entiers import entier
 
 
 def si(condition: bool, A, B=None, Aargs: list = [], Baargs: list = []):
@@ -16,11 +16,12 @@ def si(condition: bool, A, B=None, Aargs: list = [], Baargs: list = []):
         return B(Baargs)
 
 
-def dans(a : bool, L : List) -> bool:
+def dans(a: bool, L: list) -> bool:
     for i in L:
         if i == a:
             return True
     return False
+
 
 def imprimer(*args) -> None:
     """Traduction de la fonction print"""
@@ -32,6 +33,7 @@ def imprimer(*args) -> None:
             res += chaine(a)
     print(res)
 
+
 def pour(fonction, *args):
     """Equivalent de la fonction for + ajout du support de l ecriture c de for"""
     res = 0
@@ -41,7 +43,7 @@ def pour(fonction, *args):
     elif len(args) == 0:
         raise ErreurArguments("La fonction nécessite au moins 2 argument")
     elif len(args) == 1:
-        if isinstance(args[0], (List, Tuple, str, chaine)):
+        if isinstance(args[0], (list, tuple, str, chaine)):
             i = 0
             while i < len(args[0]):
                 fonction(args[0][i])
@@ -61,6 +63,7 @@ def pour(fonction, *args):
         while i < len(r):
             fonction(r[i])
             i += 1
+
 
 def distance(*args) -> tuple:
     """Remplacement de la fonction range"""
@@ -91,4 +94,18 @@ def distance(*args) -> tuple:
         a += pas
     return tuple(res)
 
+
+def tant_que(condition: bool, f, args: list = []):
+    while condition:
+        f(args)
+
+
+def essayer(f, g, argsF: list = [], argsG: list = [], argsH: list = [],  h=None) -> Any:
+    """ Essaye la fonction f si erreur execute g sinon execute h retourne le resultat de g ou h"""
+    try:
+        f(argsF)
+    except:
+        return g(argsG)
+    else:
+        return h(argsH)
 

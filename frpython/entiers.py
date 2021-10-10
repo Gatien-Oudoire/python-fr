@@ -45,6 +45,11 @@ class entier:
             raise TypeInconnu(
                 "La variable entrée n'est pas convertible en entier")
 
+    def racine(self, o = 2) -> float:
+        if isinstance(o, int):
+            return decimal(self.contenu ** (1/o))
+        return decimal(self.contenu ** (1/o.contenu))
+
     def vers_int(self):
         return self.contenu
 

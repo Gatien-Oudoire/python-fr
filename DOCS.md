@@ -20,6 +20,13 @@ chiffres : tuple[int]
 dictioChiffres : dict[str, int]
 ```
 
+### Méthodes:
+
+```py
+racine(self : entier, o : int | entier) -> decimal
+vers_int(self : entier) -> int
+```
+
 ## Décimal
 
 Les décimaux peuvent utiliser les opérateurs suivants: +
@@ -36,6 +43,12 @@ decimal(o : int | str | chaine | entier | float | decimal)
 
 ```py
 contenu : float
+```
+
+### Méthodes:
+
+```py
+racine(self : decimal, o : int | entier) -> decimal
 ```
 
 ## Chaines

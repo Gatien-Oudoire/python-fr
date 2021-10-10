@@ -56,3 +56,14 @@ class chaine:
             res.append(self.contenu[i])
         return iter(res)
 
+    def __eq__(self, o: object) -> bool:
+        if isinstance(o, str):
+            return self.contenu == o
+        return self.contenu == o.contenu
+
+    def a_l_envers(self) -> object:
+        res = []
+        for c in self.contenu:
+            res.append(c)
+        res.reverse()
+        return chaine(res)
