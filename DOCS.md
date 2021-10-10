@@ -67,7 +67,7 @@ Ils peuvent êtres comparés avec : == not
 ### Initialiseur:
 
 ```py
-decimal(o : int | entier | bool | booleen)
+booleen(o : int | entier | bool | booleen)
 ```
 
 ### Attributs:
