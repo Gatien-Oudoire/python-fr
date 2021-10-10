@@ -27,3 +27,8 @@ class decimal:
 
         elif isinstance(o, decimal):
             return self.contenu == o.contenu
+
+    def __add__(self, o : object):
+        if isinstance(o, float):
+            return decimal(self.contenu + o)
+        return decimal(self.contenu + o.contenu)

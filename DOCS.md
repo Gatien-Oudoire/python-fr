@@ -2,15 +2,18 @@
 
 ## Entier
 
-Les entiers peuvent utiliser les opérateurs suivants : + * - /
+Les entiers peuvent utiliser les opérateurs suivants : + \* - / // \*\* %
+
 Ils peuvent être comparés avec : < <= == > >=
 
 ### Initialiseur:
+
 ```py
 entier(valeur : int | str | float | entier | chaine | decimal)
 ```
 
 ### Attributs:
+
 ```py
 contenu : int
 chiffres : tuple[int]
@@ -57,14 +60,29 @@ nombres : list[int]
 
 Les chaines sont itérables
 
-# Fonctions 
+## Booléen
+
+Ils peuvent êtres comparés avec : == not
+
+### Initialiseur:
+
+```py
+decimal(o : int | entier | bool | booleen)
+```
+
+### Attributs:
+
+```py
+contenu : bool
+```
+
+# Fonctions
 
 ## Dans
 
 ```py
 dans(a : Any, L : List | Tuple | chaine | str)
 ```
-
 
 ## Imprimer
 

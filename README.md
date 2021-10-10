@@ -11,7 +11,7 @@ Ceci est une tentative de traduction des classes de base Python, de certaines co
 | 1.2.5   | *Stable    | License    |
 | 1.2.6   | *Stable    | /          |
 | 1.2.7   | *Stable    | PyPi       |
-| 1.3     | En Test    | Decimal    |
+| 1.3     | Mort       | Decimal    |
 | 1.4     | En Test    | Booleen    |
 
 *stable mais pas trop

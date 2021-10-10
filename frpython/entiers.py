@@ -1,5 +1,4 @@
 from .erreurs import ErreurDeConversion, TypeInconnu
-from .chaines import chaine
 from .decimaux import decimal
 from .booleen import booleen
 
@@ -16,7 +15,7 @@ class entier:
         if isinstance(o, int):
             self.contenu = o
 
-        elif isinstance(o, (str, chaine)):
+        elif isinstance(o, (str)):
             for c in o:
                 if not (c in self.chiffres):
                     raise ErreurDeConversion(
@@ -46,6 +45,9 @@ class entier:
             raise TypeInconnu(
                 "La variable entrée n'est pas convertible en entier")
 
+    def vers_int(self):
+        return self.contenu
+
     def __eq__(self, o: object) -> bool:
         if isinstance(o, entier):
             return self.contenu == o.contenu
@@ -56,7 +58,7 @@ class entier:
             return self.contenu > o.contenu
         return self.contenu > o
 
-    def __gt__(self, o: object) -> bool:
+    def __ge__(self, o: object) -> bool:
         if isinstance(o, entier):
             return self.contenu >= o.contenu
         return self.contenu >= o
@@ -66,10 +68,50 @@ class entier:
             return self.contenu < o.contenu
         return self.contenu < o
 
-    def __le__(self, o: object):
+    def __le__(self, o: object) -> bool:
         if isinstance(o, entier):
             return self.contenu <= o.contenu
         return self.contenu <= o
 
-    def __truth__(self):
+    def __truth__(self) -> bool:
         return bool(self.contenu)
+    
+    def __add__(self, o : object) -> object:
+        if isinstance(o, int):
+            return entier(self.contenu + o)
+        return entier(self.contenu + o.contenu)
+
+    def __sub__(self, o : object):
+        if isinstance(o, int):
+            return entier(self.contenu - o)
+        return entier(self.contenu - o.contenu)
+
+    def __truediv__(self, o : object) -> decimal:
+        if isinstance(o, int):
+            return decimal(self.contenu / o)
+        return decimal(self.contenu / o.contenu)
+
+    def __floordiv__(self, o : object) -> object:
+        if isinstance(o, int):
+            return entier(self.contenu // o)
+        return entier(self.contenu // o.contenu)
+
+    def __neg__(self):
+        return entier(-self.contenu)
+
+    def __pow__(self, o : object):
+        if isinstance(o, int):
+            return entier(self.contenu ** o)
+        return entier(self.contenu ** o.contenu)
+
+    def __mod__(self, o : object):
+        if isinstance(o, int):
+            return entier(self.contenu % o)
+        return entier(self.contenu % o.contenu)
+
+    def __mul__(self, o : object):
+        if isinstance(o, int):
+            return entier(self.contenu * o)
+        return entier(self.contenu * o.contenu)
+
+    
