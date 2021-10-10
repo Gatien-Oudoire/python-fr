@@ -1,9 +1,4 @@
-from .erreurs import *
-from .decimaux import decimal
-from .booleen import booleen
-from .chaines import chaine
-from .entiers import entier
-from .fonctions import dans, distance, pour, si, imprimer
+from .fonctions import *
 
 def fr_python_info():
     try:
